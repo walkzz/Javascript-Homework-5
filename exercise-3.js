@@ -11,3 +11,14 @@
 // Да се повика функцијата checkNumber со неколку различни аргументи и соодветно во .then() и .catch 
 // да се повикаат handleSuccess и handleError
 
+function checkNumber(number) {
+    return new Promise((resolve, reject) => {
+        if (typeof number !== 'number') {
+            reject('Input must be a number');
+        } else if (number % 2 === 0) {
+            resolve('The number is even');
+        } else {
+            reject('The number is odd');
+        }
+    });
+}
