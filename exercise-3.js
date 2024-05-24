@@ -29,3 +29,8 @@ function handleSuccess(message) {
 function handleError(error) {
     console.error(error);
 }
+checkNumber(2).then(handleSuccess).catch(handleError);
+checkNumber(5).then(handleSuccess).catch(handleError);
+checkNumber(7).then(handleSuccess).catch(handleError);
+checkNumber(10).then(handleSuccess).catch(handleError);
+checkNumber('Hello World').then(handleSuccess).catch(handleError);
