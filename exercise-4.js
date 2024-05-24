@@ -14,3 +14,14 @@ function fetchData() {
 // Ваша задача е да дефинирате асинхрона функција displayUserDetails која што ќе ги испечати податоците во конзола. 
 // Да се употребат try/catch блокови.
 
+async function displayUserDetails() {
+    try {
+        const data = await fetchData();
+        console.log('User Details:');
+        console.log(`Name: ${data.name}`);
+        console.log(`Age: ${data.age}`);
+        console.log(`Email: ${data.email}`);
+    } catch (error) {
+        console.error('An error occurred:', error);
+    }
+}
