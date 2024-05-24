@@ -63,3 +63,34 @@ function squareRoot(a) {
         }
     });
 }
+
+// calling the functions with .then() and .catch()
+add(20, 3).then(result => {
+    console.log('Addition result:', result);
+}).catch(error => {
+    console.error('Addition error:', error);
+});
+
+subtract(10, 3).then(result => {
+    console.log('Subtraction result:', result);
+}).catch(error => {
+    console.error('Subtraction error:', error);
+});
+
+multiply(2, 3).then(result => {
+    console.log('Multiplication result:', result);
+}).catch(error => {
+    console.error('Multiplication error:', error);
+});
+
+divide(5, 2).then(result => {
+    console.log('Division result:', result);
+}).catch(error => {
+    console.error('Division error:', error);
+});
+
+squareRoot(4).then(result => {
+    console.log('Square root result:', result);
+}).catch(error => {
+    console.error('Square root error:', error);
+});
