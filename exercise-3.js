@@ -22,3 +22,10 @@ function checkNumber(number) {
         }
     });
 }
+function handleSuccess(message) {
+    console.log(message);
+}
+
+function handleError(error) {
+    console.error(error);
+}
