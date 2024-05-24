@@ -94,3 +94,43 @@ squareRoot(4).then(result => {
 }).catch(error => {
     console.error('Square root error:', error);
 });
+
+async function doOperations() {
+    try {
+        let result = await add(20, 3);
+        console.log('Addition result:', result);
+    } catch (error) {
+        console.error('Addition error:', error);
+    }
+
+    try {
+        let result = await subtract(10, 3);
+        console.log('Subtraction result:', result);
+    } catch (error) {
+        console.error('Subtraction error:', error);
+    }
+
+    try {
+        let result = await multiply(2, 3);
+        console.log('Multiplication result:', result);
+    } catch (error) {
+        console.error('Multiplication error:', error);
+    }
+
+    try {
+        let result = await divide(5, 2);
+        console.log('Division result:', result);
+    } catch (error) {
+        console.error('Division error:', error);
+    }
+
+    try {
+        let result = await squareRoot(4);
+        console.log('Square root result:', result);
+    } catch (error) {
+        console.error('Square root error:', error);
+    }
+}
+
+// calling the function
+doOperations();
